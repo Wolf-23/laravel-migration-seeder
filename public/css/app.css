@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+header {
+  height: 80px;
+  background-color: lightblue;
+}
+
+header .header-container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+}
+
+header .header-container li {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+header .header-container li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+}
+
+header .header-container li a.active,
+header .header-container li a:hover {
+  border-bottom: 2px solid black;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.container .info {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.container .cont-title {
+  margin: 25px 0;
+  color: #074dff;
+}
+
+.container .card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container .card-container .card {
+  border: 1px solid black;
+  width: calc(33.3333333333% - 30px);
+  margin: 15px 15px;
+  background-color: rgb(200, 200, 200);
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.container .card-container .name,
+.container .card-container .departure,
+.container .card-container .arrival {
+  margin-bottom: 10px;
+}
+
+.container .card-container .carriages {
+  margin-bottom: 35px;
+}
+
+.container .card-container .not-in-time,
+.container .card-container .deleted,
+.container .card-container .in-time,
+.container .card-container .not-deleted {
+  width: 50%;
+  margin: 15px auto;
+  text-align: center;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.container .card-container .in-time,
+.container .card-container .not-deleted {
+  background-color: rgb(0, 167, 0);
+}
+
+.container .card-container .not-in-time,
+.container .card-container .deleted {
+  background-color: rgb(217, 0, 0);
+}
+
